@@ -36,8 +36,42 @@ This application promotes sustainable farming and cooking by providing users wit
 
 ## Setup Instructions
 
-### 1. Set Up the Environment
-Navigate to the project directory:
-
+1. Clone the repository and navigate to the project directory:
 ```bash
 cd RAG/examples/basic_rag/llamaindex/
+```
+2. Create and activate a virtual environment:
+```
+python3 -m venv your_env 
+source your_env/bin/activate 
+```
+3. Install required dependencies:
+```
+pip install -r requirements.txt
+```
+4. Set up environment variables:
+```
+export NGC_API_KEY="{your api key}"
+export NVIDIA_API_KEY="{your api key}"
+```
+5. Modify Docker configuration:
+```
+nano ~/.docker/config.json
+```
+5a. Remove the line:
+```
+"credsStore": "osxkeychain"
+```
+6. Build the application
+```
+docker compose up -d --build
+
+```
+7. Verify running containers
+```
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+```
+8. To stop the application:
+```
+docker compose down
+```
