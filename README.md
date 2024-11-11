@@ -5,11 +5,16 @@
 
 This application promotes sustainable farming and cooking by providing users with personalized recipes, food storage strategies, and community-driven tips based on seasonal and local ingredients. It also integrates computer vision to identify vegetables from farm stand photos, emphasizing zero-waste cooking and supporting local farms.
 
+### Motivations:
+1. Reduce food waste.
+2. Support local farms and markets.
+3. Simplify eating natural, healthy foods.
+
 ### Key Features:
 1. **Inputs**:
    - **Season and Location**: Suggests a list of seasonal vegetables.
    - **Vegetables of Interest**: Choose from the suggested list.
-   - **Farm Stand Photo**: Uses computer vision to identify vegetables.
+   - **Farm Stand Photo {stretch feature}**: Uses computer vision to identify vegetables.
    - **Number of People**: Adjusts recipe portions.
    - **Dietary Restrictions**: Filters recipes to meet dietary needs.
 
@@ -27,18 +32,6 @@ This application promotes sustainable farming and cooking by providing users wit
      - "Food as Medicine" insights:
        - Health benefits (e.g., turmeric for inflammation).
        - Spiritual properties (e.g., calming effects of certain herbs).
-
-### Minimum Viable Product (MVP)
-- A simple web application that:
-  - Handles inputs for season or vegetable list.
-  - Outputs recipes, food scrap recommendations, and storage strategies.
-  - Provides text popups for information on food donations and health benefits.
-
-### Motivations:
-1. Reduce food waste.
-2. Support local farms and markets.
-3. Simplify eating natural, healthy foods.
-
 ---
 
 ## Setup Instructions
